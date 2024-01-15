@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def main():
     some = os.environ.get('someVar')
-    return 'I have changed the text here for testing: {}!\n second line'.format(some)
+    return 'This is output: {}!\n second line'.format(some)
 
 
 if __name__ == "__main__":
